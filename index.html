@@ -8,29 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" id="theme-link">
 </head>
 <body>
-    <!-- Introdução Impactante -->
-    <section class="main-section text-center d-flex align-items-center justify-content-center">
-        <div class="animate__animated animate__fadeIn">
-            <h1 class="main-title">Desenvolvedor <span class="highlight">Backend</span></h1>
-            <p class="main-summary">Sou Lucas Ortiz, um desenvolvedor backend especializado em criar soluções escaláveis e eficientes. Busco sempre entregar produtos de alto impacto e qualidade.</p>
-            <div class="social-icons mt-4">
-                <a href="https://github.com/olucasortiz" target="_blank"><img src="img/github.png" alt="GitHub" class="icon animate__animated animate__bounceIn"></a>
-                <a href="https://www.linkedin.com/in/lucas-sas-ortiz-campos/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" class="icon animate__animated animate__bounceIn"></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Sobre Mim -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2 class="animate__animated animate__fadeInUp">Sobre Mim</h2>
-            <p class="animate__animated animate__fadeInUp">Sou um desenvolvedor backend apaixonado por tecnologia e inovação. Tenho experiência em criar APIs robustas e sistemas escaláveis. Minha jornada no desenvolvimento começou há alguns anos, e desde então, tenho trabalhado para aprimorar minhas habilidades e entregar projetos de alta qualidade. Tenho afinidade com Java, Spring e PostgreSQL.</p>
-        </div>
-    </section>
-
     <!-- Navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
@@ -50,63 +30,141 @@
                         <a class="nav-link" href="#skills">Habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experiência</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#education">Educação</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Seção de Introdução -->
+    <section class="intro-section d-flex align-items-center justify-content-center">
+        <div class="text-center">
+            <p class="greeting">Olá, visitante! <span id="wave" class="wave">👋</span></p>
+            <h1 class="intro-title">Meu nome é Lucas Ortiz</h1>
+            <h2 class="intro-subtitle">Desenvolvedor Backend</h2>
+            <div class="divider"></div>
+            <div class="social-icons mt-4">
+                <a href="https://www.linkedin.com/in/lucas-sas-ortiz-campos-44778324a/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" class="icon"></a>
+                <a href="https://github.com/olucasortiz" target="_blank"><img src="img/github.png" alt="GitHub" class="icon"></a>
+                <a href="mailto:lucassas@outlook.com"><img src="img/email.png" alt="Email" class="icon"></a>
+            </div>
+        </div>
+        <div class="scroll-indicator text-center">
+            <p>SCROLL</p>
+            <img src="img/scroll-down-icon.png" alt="Scroll Down">
+        </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="animate__animated animate__fadeInUp">Sobre Mim</h2>
+            <p class="animate__animated animate__fadeInUp">Sou um desenvolvedor backend apaixonado por tecnologia e inovação. Tenho experiência em criar APIs robustas e sistemas escaláveis. Minha jornada no desenvolvimento começou há alguns anos, e desde então, tenho trabalhado para aprimorar minhas habilidades e entregar projetos de alta qualidade. Tenho afinidade com Java, Spring e PostgreSQL.</p>
+        </div>
+    </section>
+
+   <!-- Seção de Habilidades -->
+   <section id="skills" class="skills-section my-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Habilidades</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-2 col-sm-4 col-6 text-center">
+                <div class="skill-card">
+                    <img src="img/java.png" alt="Java" class="img-fluid">
+                    <p>Java</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-6 text-center">
+                <div class="skill-card">
+                    <img src="img/spring.png" alt="Spring" class="img-fluid">
+                    <p>Spring</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-6 text-center">
+                <div class="skill-card">
+                    <img src="img/csharp.png" alt="C#" class="img-fluid">
+                    <p>C#</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-6 text-center">
+                <div class="skill-card">
+                    <img src="img/asp.png" alt="ASP.NET" class="img-fluid">
+                    <p>ASP.NET</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-6 text-center">
+                <div class="skill-card">
+                    <img src="img/postgres.png" alt="PostgreSQL" class="img-fluid">
+                    <p>PostgreSQL</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 col-6 text-center">
+                <div class="skill-card">
+                    <img src="img/swagger.png" alt="Docker" class="img-fluid">
+                    <p>Swagger</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- Seções do Portfólio -->
     <main class="container mt-5">
-        <!-- Projetos -->
         <section id="projects" class="my-5">
-            <h2 class="animate__animated animate__fadeInUp">Projetos</h2>
-            <div class="row">
-                <!-- Projeto CRUD API -->
-                <div class="col-md-6">
-                    <div class="card mb-4 shadow-sm animate__animated animate__fadeInLeft">
-                        <div class="card-body">
-                            <h3 class="card-title">CRUD API com Spring Boot</h3>
-                            <p class="card-text">Desenvolvi uma API CRUD completa com Java, Spring Boot, Flyway, e PostgreSQL no backend, e HTML, CSS, e JavaScript no frontend. O projeto reduziu o tempo de carregamento em 30% e melhorou a eficiência do sistema em 20%.</p>
-                            <ul>
-                                <li><strong>Backend:</strong> Java, Spring Boot, Flyway, PostgreSQL</li>
-                                <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <a href="https://github.com/olucasortiz/seu-repositorio" class="btn btn-primary" target="_blank">Ver Código</a>
-                                <a href="https://link-para-demo" class="btn btn-secondary" target="_blank">Ver Demo</a>
-                            </div>
+            <h2 class="section-title" >Meus Projetos</h2>
+            <div class="project">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="project-image">
+                            <img src="img/projeto-crud.png" alt="Imagem do Projeto" class="img-fluid">
                         </div>
                     </div>
-                </div>
-                <!-- Projeto Biblioteca -->
-                <div class="col-md-6">
-                    <div class="card mb-4 shadow-sm animate__animated animate__fadeInRight">
-                        <div class="card-body">
-                            <h3 class="card-title">Projeto Biblioteca</h3>
-                            <p class="card-text">Um sistema que lê informações de um arquivo texto, constrói listas dinâmicas e permite excluir livros e autores. Desenvolvido em C e C++ no Dev C++.</p>
-                            <ul>
-                                <li><strong>Linguagens:</strong> C, C++</li>
-                                <li><strong>Ferramenta:</strong> Dev C++</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <a href="https://github.com/olucasortiz/projeto-biblioteca" class="btn btn-primary" target="_blank">Ver Código</a>
-                            </div>
+                    <div class="col-md-6">
+                        <div class="project-info">
+                            <h3 class="project-title">CRUD API com Spring Boot</h3>
+                            <p class="project-description">Desenvolvi uma API CRUD completa com Java, Spring Boot, Flyway, PostgreSQL e Swagger
+                                 no backend, e HTML, CSS, e JavaScript no frontend. </p>
+                            <p class="project-tech">Tecnologias utilizadas: Java, Spring Boot, Spring Data JPA, JUnit, Flyway, Swagger, PostgreSQL, HTML, CSS, JavaScript e Bootstrap</p>
+                            <a href="https://github.com/olucasortiz/Projeto-API-CRUD-Java-Spring" class="project-link">Ver projeto no GitHub</a>
+                            <a href="https://link-para-demo" class="project-link">Acessar projeto</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="project">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="project-image">
+                            <img src="img/projeto-c.png" alt="Imagem do Projeto" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-info">
+                            <h3 class="project-title">Projeto Biblioteca</h3>
+                            <p class="project-description">Um sistema que lê informações de um arquivo texto, constrói listas dinâmicas e permite excluir livros e autores. Desenvolvido em C e C++ no Dev C++.</p>
+                            <p class="project-tech">Tecnologias: C, C++</p>
+                            <a href="https://github.com/olucasortiz/Projeto-Biblioteca-C-C-" class="project-link">Ver projeto no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione mais projetos conforme necessário -->
         </section>
-
-        <!-- Outras seções do portfólio continuam abaixo, caso necessárias -->
     </main>
+    <!-- Seção de Educação -->
+    <section id="education" class="education-section my-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Educação</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3>Sistemas de Informação</h3>
+                    <p>02/2022 - 06/2026</p>
+                    <p>Unoeste</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="scripts.js"></script>
 </body>

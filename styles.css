@@ -334,6 +334,7 @@ section p, section ul {
     opacity: 1;
     transform: translateY(0);
 }
+
 /* Seção de Projetos */
 .project {
     margin-bottom: 50px;
@@ -385,4 +386,53 @@ section p, section ul {
 
 .light-theme .project-link:hover {
     color: #ff4500;
+}
+
+/* Seção de Educação */
+.education-section {
+    padding: 50px 0;
+    background-color: #333333;
+    color: #f4f4f4;
+}
+
+.light-theme .education-section {
+    background-color: #f9f9f9;
+    color: #1a1a1a;
+}
+
+.education-section h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff6600;
+}
+
+.education-section p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.education-section p:last-of-type {
+    margin-bottom: 0;
+}
+
+.education-card {
+    background-color: #444444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-10px);
+    background-color: #555555;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.light-theme .education-card {
+    background-color: #ffffff;
+}
+
+.light-theme .education-card:hover {
+    background-color: #eeeeee;
 }
